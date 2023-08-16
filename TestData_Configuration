@@ -1,0 +1,25 @@
+#Test_Data_for_LoginPage
+
+Invalid_password=123456
+LoginValidityConfirm=Edit your account information
+WarningMessageValidity=Warning: No match for E-Mail Address and/or Password
+TestCaseFail= Wrong Page
+
+#Test_Data_Registration
+FirstName=Shantanu
+LastName=Mazumder
+Telephone=01945423478
+RegistrationValidityConfirm=Your Account Has Been Created!
+ExistingEmailValidity=Warning: E-Mail Address is already registered!
+warningMessageForPrivacyPolicy=Warning: You must agree to the Privacy Policy!
+warningMessageForFirstName=First Name must be between 1 and 32 characters!
+warningMessageForLastName=Last Name must be between 1 and 32 characters!
+warningMessageForEmail=E-Mail Address does not appear to be valid!
+TelephoneWarning=Telephone must be between 3 and 32 characters!
+PasswordWarning=Password must be between 4 and 20 characters!
+confirmPasswordFieldValidity=Password confirmation does not match password!
+
+#Test_Data_Search
+ValidProduct=HP
+invalidProduct=Accer
+InvalidProductWarningMessage=There is no product that matches the searching criteria.

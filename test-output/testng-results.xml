@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-16T09:24:57 BDT" name="SuiteForSearchPage" finished-at="2023-08-16T09:25:25 BDT" duration-ms="28349">
+    <groups>
+    </groups>
+    <test started-at="2023-08-16T09:24:57 BDT" name="TestForSearchPage" finished-at="2023-08-16T09:25:25 BDT" duration-ms="28349">
+      <class name="com.e_commerce.testcases.SearchTestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.SearchTestCase@2ddc9a9f]" started-at="2023-08-16T09:24:58 BDT" name="setup" finished-at="2023-08-16T09:25:09 BDT" duration-ms="10999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySearchWithValidProduct()[pri:1, instance:com.e_commerce.testcases.SearchTestCase@2ddc9a9f]" started-at="2023-08-16T09:25:09 BDT" name="verifySearchWithValidProduct" finished-at="2023-08-16T09:25:10 BDT" duration-ms="1251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithValidProduct -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.SearchTestCase@2ddc9a9f]" started-at="2023-08-16T09:25:10 BDT" name="teardown" finished-at="2023-08-16T09:25:14 BDT" duration-ms="3288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.SearchTestCase@2ddc9a9f]" started-at="2023-08-16T09:25:14 BDT" name="setup" finished-at="2023-08-16T09:25:21 BDT" duration-ms="7067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySearchWithInValidProduct()[pri:2, instance:com.e_commerce.testcases.SearchTestCase@2ddc9a9f]" started-at="2023-08-16T09:25:21 BDT" name="verifySearchWithInValidProduct" finished-at="2023-08-16T09:25:22 BDT" duration-ms="976" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test should be failed for searching expected [There is no product that matches the searching criteria.] but found [There is no product that matches the search criteria.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test should be failed for searching expected [There is no product that matches the searching criteria.] but found [There is no product that matches the search criteria.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at com.e_commerce.testcases.SearchTestCase.verifySearchWithInValidProduct(SearchTestCase.java:55)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithInValidProduct -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.SearchTestCase@2ddc9a9f]" started-at="2023-08-16T09:25:22 BDT" name="teardown" finished-at="2023-08-16T09:25:25 BDT" duration-ms="3284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="VerifySearchFieldWithoutInputtingvalue()[pri:3, instance:com.e_commerce.testcases.SearchTestCase@2ddc9a9f]" started-at="2023-08-16T09:25:25 BDT" name="VerifySearchFieldWithoutInputtingvalue" finished-at="2023-08-16T09:25:25 BDT" depends-on-methods="com.e_commerce.testcases.SearchTestCase.verifySearchWithValidProduct, com.e_commerce.testcases.SearchTestCase.verifySearchWithInValidProduct" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.e_commerce.testcases.SearchTestCase.VerifySearchFieldWithoutInputtingvalue() on instance com.e_commerce.testcases.SearchTestCase@2ddc9a9f depends on not successfully finished methods 
+[com.e_commerce.testcases.SearchTestCase.verifySearchWithValidProduct() on instance com.e_commerce.testcases.SearchTestCase@2ddc9a9f
+com.e_commerce.testcases.SearchTestCase.verifySearchWithInValidProduct() on instance com.e_commerce.testcases.SearchTestCase@2ddc9a9f]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.e_commerce.testcases.SearchTestCase.VerifySearchFieldWithoutInputtingvalue() on instance com.e_commerce.testcases.SearchTestCase@2ddc9a9f depends on not successfully finished methods 
+[com.e_commerce.testcases.SearchTestCase.verifySearchWithValidProduct() on instance com.e_commerce.testcases.SearchTestCase@2ddc9a9f
+com.e_commerce.testcases.SearchTestCase.verifySearchWithInValidProduct() on instance com.e_commerce.testcases.SearchTestCase@2ddc9a9f]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchFieldWithoutInputtingvalue -->
+      </class> <!-- com.e_commerce.testcases.SearchTestCase -->
+    </test> <!-- TestForSearchPage -->
+  </suite> <!-- SuiteForSearchPage -->
+</testng-results>

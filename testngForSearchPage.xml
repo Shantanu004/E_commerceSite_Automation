@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteForSearchPage">
+	<listeners>
+       <listener class-name="Listener.E_commerceProjectListener"  />
+	</listeners>
+	<test thread-count="5" name="TestForSearchPage">
+		<classes>
+			<class name="com.e_commerce.testcases.SearchTestCase" />
+		</classes>
+	</test> <!-- TestForSearchPage -->
+</suite> <!-- SuiteForSearchPage -->
