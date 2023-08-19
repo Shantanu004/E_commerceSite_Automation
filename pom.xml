@@ -1,4 +1,5 @@
- <project xmlns="http://maven.apache.org/POM/4.0.0"
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
@@ -11,8 +12,9 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.10.0</version>
+			<version>4.11.0</version>
 		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools-v114 -->
 		<dependency>
@@ -98,19 +100,19 @@
 		</dependency>
 	</dependencies>
 	<build>
-	<pluginManagement>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.1.2</version>
-				<configuration>
-					<suiteXmlFiles>
-						<suiteXmlFile>MainTestNGFile.xml</suiteXmlFile>
-					</suiteXmlFiles>
-				</configuration>
-			</plugin>
-		</plugins>
-	</pluginManagement>
-</build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.1.2</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>MainTestNGFile.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 </project>

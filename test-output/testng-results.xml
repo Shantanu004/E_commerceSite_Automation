@@ -1,29 +1,683 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+<testng-results ignored="0" total="15" passed="6" failed="1" skipped="8">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-16T09:24:57 BDT" name="SuiteForSearchPage" finished-at="2023-08-16T09:25:25 BDT" duration-ms="28349">
+  <suite started-at="2023-08-19T11:51:37 BDT" name="Suite" finished-at="2023-08-19T11:53:41 BDT" duration-ms="123727">
     <groups>
     </groups>
-    <test started-at="2023-08-16T09:24:57 BDT" name="TestForSearchPage" finished-at="2023-08-16T09:25:25 BDT" duration-ms="28349">
-      <class name="com.e_commerce.testcases.SearchTestCase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.SearchTestCase@2ddc9a9f]" started-at="2023-08-16T09:24:58 BDT" name="setup" finished-at="2023-08-16T09:25:09 BDT" duration-ms="10999" status="PASS">
+    <test started-at="2023-08-19T11:51:37 BDT" name="MainTestNGFile" finished-at="2023-08-19T11:53:41 BDT" duration-ms="123727">
+      <class name="com.e_commerce.testcases.LoginTestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:17 BDT" name="setup" finished-at="2023-08-19T11:53:20 BDT" duration-ms="2917" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at BasePackage.BaseClass.intilizeBrowserAndOpenApplicationURL(BaseClass.java:49)
+at com.e_commerce.testcases.LoginTestCase.setup(LoginTestCase.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySearchWithValidProduct()[pri:1, instance:com.e_commerce.testcases.SearchTestCase@2ddc9a9f]" started-at="2023-08-16T09:25:09 BDT" name="verifySearchWithValidProduct" finished-at="2023-08-16T09:25:10 BDT" duration-ms="1251" status="PASS">
+        <test-method signature="LoginWithValidCredentials()[pri:0, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:20 BDT" name="LoginWithValidCredentials" finished-at="2023-08-19T11:53:20 BDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at BasePackage.BaseClass.intilizeBrowserAndOpenApplicationURL(BaseClass.java:49)
+at com.e_commerce.testcases.LoginTestCase.setup(LoginTestCase.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySearchWithValidProduct -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.SearchTestCase@2ddc9a9f]" started-at="2023-08-16T09:25:10 BDT" name="teardown" finished-at="2023-08-16T09:25:14 BDT" duration-ms="3288" status="PASS">
+        </test-method> <!-- LoginWithValidCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:20 BDT" name="teardown" finished-at="2023-08-19T11:53:20 BDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.SearchTestCase@2ddc9a9f]" started-at="2023-08-16T09:25:14 BDT" name="setup" finished-at="2023-08-16T09:25:21 BDT" duration-ms="7067" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="setup" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySearchWithInValidProduct()[pri:2, instance:com.e_commerce.testcases.SearchTestCase@2ddc9a9f]" started-at="2023-08-16T09:25:21 BDT" name="verifySearchWithInValidProduct" finished-at="2023-08-16T09:25:22 BDT" duration-ms="976" status="FAIL">
+        <test-method signature="LoginWithValidCredentialsUsingDataProviderFromExcelFile(java.lang.String,java.lang.String)[pri:1, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="LoginWithValidCredentialsUsingDataProviderFromExcelFile" data-provider="DataSupplyingFromExcel" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shanxyz@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at BasePackage.BaseClass.intilizeBrowserAndOpenApplicationURL(BaseClass.java:49)
+at com.e_commerce.testcases.LoginTestCase.setup(LoginTestCase.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidCredentialsUsingDataProviderFromExcelFile -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="teardown" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="setup" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginWithValidCredentialsUsingDataProviderFromExcelFile(java.lang.String,java.lang.String)[pri:1, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="LoginWithValidCredentialsUsingDataProviderFromExcelFile" data-provider="DataSupplyingFromExcel" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shan34@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at BasePackage.BaseClass.intilizeBrowserAndOpenApplicationURL(BaseClass.java:49)
+at com.e_commerce.testcases.LoginTestCase.setup(LoginTestCase.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidCredentialsUsingDataProviderFromExcelFile -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="teardown" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="setup" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginWithInValidCredentials()[pri:2, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="LoginWithInValidCredentials" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at BasePackage.BaseClass.intilizeBrowserAndOpenApplicationURL(BaseClass.java:49)
+at com.e_commerce.testcases.LoginTestCase.setup(LoginTestCase.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInValidCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="teardown" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="setup" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginWithValidUsernameInvalidpassword()[pri:3, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="LoginWithValidUsernameInvalidpassword" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at BasePackage.BaseClass.intilizeBrowserAndOpenApplicationURL(BaseClass.java:49)
+at com.e_commerce.testcases.LoginTestCase.setup(LoginTestCase.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidUsernameInvalidpassword -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="teardown" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="setup" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginWithInValidUsernameValidpassword()[pri:4, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="LoginWithInValidUsernameValidpassword" finished-at="2023-08-19T11:53:22 BDT" duration-ms="1" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at BasePackage.BaseClass.intilizeBrowserAndOpenApplicationURL(BaseClass.java:49)
+at com.e_commerce.testcases.LoginTestCase.setup(LoginTestCase.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInValidUsernameValidpassword -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="teardown" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="setup" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginWithoutProvidingCredentials()[pri:5, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="LoginWithoutProvidingCredentials" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from no such execution context: uniqueContextId not found
+  (Session info: chrome=116.0.5845.96) 
+Host info: host: 'TEAMOS-PC', ip: '192.168.0.137'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files (x86)\Goog..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at BasePackage.BaseClass.intilizeBrowserAndOpenApplicationURL(BaseClass.java:49)
+at com.e_commerce.testcases.LoginTestCase.setup(LoginTestCase.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithoutProvidingCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.LoginTestCase@273444fe]" started-at="2023-08-19T11:53:22 BDT" name="teardown" finished-at="2023-08-19T11:53:22 BDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.e_commerce.testcases.LoginTestCase -->
+      <class name="com.e_commerce.testcases.SearchTestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.SearchTestCase@5524cca1]" started-at="2023-08-19T11:53:22 BDT" name="setup" finished-at="2023-08-19T11:53:27 BDT" duration-ms="5218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySearchWithValidProduct()[pri:1, instance:com.e_commerce.testcases.SearchTestCase@5524cca1]" started-at="2023-08-19T11:53:27 BDT" name="verifySearchWithValidProduct" finished-at="2023-08-19T11:53:28 BDT" duration-ms="1141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithValidProduct -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.SearchTestCase@5524cca1]" started-at="2023-08-19T11:53:28 BDT" name="teardown" finished-at="2023-08-19T11:53:31 BDT" duration-ms="3156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.SearchTestCase@5524cca1]" started-at="2023-08-19T11:53:31 BDT" name="setup" finished-at="2023-08-19T11:53:36 BDT" duration-ms="4946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySearchWithInValidProduct()[pri:2, instance:com.e_commerce.testcases.SearchTestCase@5524cca1]" started-at="2023-08-19T11:53:36 BDT" name="verifySearchWithInValidProduct" finished-at="2023-08-19T11:53:37 BDT" duration-ms="845" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Test should be failed for searching expected [There is no product that matches the searching criteria.] but found [There is no product that matches the search criteria.]]]>
@@ -68,21 +722,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchWithInValidProduct -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.SearchTestCase@2ddc9a9f]" started-at="2023-08-16T09:25:22 BDT" name="teardown" finished-at="2023-08-16T09:25:25 BDT" duration-ms="3284" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.SearchTestCase@5524cca1]" started-at="2023-08-19T11:53:37 BDT" name="teardown" finished-at="2023-08-19T11:53:41 BDT" duration-ms="3335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="VerifySearchFieldWithoutInputtingvalue()[pri:3, instance:com.e_commerce.testcases.SearchTestCase@2ddc9a9f]" started-at="2023-08-16T09:25:25 BDT" name="VerifySearchFieldWithoutInputtingvalue" finished-at="2023-08-16T09:25:25 BDT" depends-on-methods="com.e_commerce.testcases.SearchTestCase.verifySearchWithValidProduct, com.e_commerce.testcases.SearchTestCase.verifySearchWithInValidProduct" duration-ms="0" status="SKIP">
+        <test-method signature="VerifySearchFieldWithoutInputtingvalue()[pri:3, instance:com.e_commerce.testcases.SearchTestCase@5524cca1]" started-at="2023-08-19T11:53:41 BDT" name="VerifySearchFieldWithoutInputtingvalue" finished-at="2023-08-19T11:53:41 BDT" depends-on-methods="com.e_commerce.testcases.SearchTestCase.verifySearchWithValidProduct, com.e_commerce.testcases.SearchTestCase.verifySearchWithInValidProduct" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method com.e_commerce.testcases.SearchTestCase.VerifySearchFieldWithoutInputtingvalue() on instance com.e_commerce.testcases.SearchTestCase@2ddc9a9f depends on not successfully finished methods 
-[com.e_commerce.testcases.SearchTestCase.verifySearchWithValidProduct() on instance com.e_commerce.testcases.SearchTestCase@2ddc9a9f
-com.e_commerce.testcases.SearchTestCase.verifySearchWithInValidProduct() on instance com.e_commerce.testcases.SearchTestCase@2ddc9a9f]]]>
+              <![CDATA[Method com.e_commerce.testcases.SearchTestCase.VerifySearchFieldWithoutInputtingvalue() on instance com.e_commerce.testcases.SearchTestCase@5524cca1 depends on not successfully finished methods 
+[com.e_commerce.testcases.SearchTestCase.verifySearchWithValidProduct() on instance com.e_commerce.testcases.SearchTestCase@5524cca1
+com.e_commerce.testcases.SearchTestCase.verifySearchWithInValidProduct() on instance com.e_commerce.testcases.SearchTestCase@5524cca1]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.e_commerce.testcases.SearchTestCase.VerifySearchFieldWithoutInputtingvalue() on instance com.e_commerce.testcases.SearchTestCase@2ddc9a9f depends on not successfully finished methods 
-[com.e_commerce.testcases.SearchTestCase.verifySearchWithValidProduct() on instance com.e_commerce.testcases.SearchTestCase@2ddc9a9f
-com.e_commerce.testcases.SearchTestCase.verifySearchWithInValidProduct() on instance com.e_commerce.testcases.SearchTestCase@2ddc9a9f]
+              <![CDATA[java.lang.Throwable: Method com.e_commerce.testcases.SearchTestCase.VerifySearchFieldWithoutInputtingvalue() on instance com.e_commerce.testcases.SearchTestCase@5524cca1 depends on not successfully finished methods 
+[com.e_commerce.testcases.SearchTestCase.verifySearchWithValidProduct() on instance com.e_commerce.testcases.SearchTestCase@5524cca1
+com.e_commerce.testcases.SearchTestCase.verifySearchWithInValidProduct() on instance com.e_commerce.testcases.SearchTestCase@5524cca1]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -109,6 +763,68 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- VerifySearchFieldWithoutInputtingvalue -->
       </class> <!-- com.e_commerce.testcases.SearchTestCase -->
-    </test> <!-- TestForSearchPage -->
-  </suite> <!-- SuiteForSearchPage -->
+      <class name="com.e_commerce.testcases.RegistrationTestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.RegistrationTestCase@2af004b]" started-at="2023-08-19T11:51:38 BDT" name="setup" finished-at="2023-08-19T11:52:21 BDT" duration-ms="42730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FillingUpTheAllRequiredFieldsWithValidValue()[pri:1, instance:com.e_commerce.testcases.RegistrationTestCase@2af004b]" started-at="2023-08-19T11:52:21 BDT" name="FillingUpTheAllRequiredFieldsWithValidValue" finished-at="2023-08-19T11:52:23 BDT" duration-ms="2490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillingUpTheAllRequiredFieldsWithValidValue -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.RegistrationTestCase@2af004b]" started-at="2023-08-19T11:52:23 BDT" name="teardown" finished-at="2023-08-19T11:52:26 BDT" duration-ms="3279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.RegistrationTestCase@2af004b]" started-at="2023-08-19T11:52:26 BDT" name="setup" finished-at="2023-08-19T11:52:33 BDT" duration-ms="7071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FillingUpTheAllFieldsWithValidValue()[pri:2, instance:com.e_commerce.testcases.RegistrationTestCase@2af004b]" started-at="2023-08-19T11:52:33 BDT" name="FillingUpTheAllFieldsWithValidValue" finished-at="2023-08-19T11:52:36 BDT" duration-ms="2414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillingUpTheAllFieldsWithValidValue -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.RegistrationTestCase@2af004b]" started-at="2023-08-19T11:52:36 BDT" name="teardown" finished-at="2023-08-19T11:52:39 BDT" duration-ms="3260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.RegistrationTestCase@2af004b]" started-at="2023-08-19T11:52:39 BDT" name="setup" finished-at="2023-08-19T11:52:51 BDT" duration-ms="11739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyTheRegistrarWithExistingEmail()[pri:3, instance:com.e_commerce.testcases.RegistrationTestCase@2af004b]" started-at="2023-08-19T11:52:51 BDT" name="verifyTheRegistrarWithExistingEmail" finished-at="2023-08-19T11:52:53 BDT" duration-ms="1959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheRegistrarWithExistingEmail -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.RegistrationTestCase@2af004b]" started-at="2023-08-19T11:52:53 BDT" name="teardown" finished-at="2023-08-19T11:52:56 BDT" duration-ms="3237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.RegistrationTestCase@2af004b]" started-at="2023-08-19T11:52:56 BDT" name="setup" finished-at="2023-08-19T11:53:02 BDT" duration-ms="5425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyallRequiredFieldsWithoutFillingUpTheFields()[pri:4, instance:com.e_commerce.testcases.RegistrationTestCase@2af004b]" started-at="2023-08-19T11:53:02 BDT" name="VerifyallRequiredFieldsWithoutFillingUpTheFields" finished-at="2023-08-19T11:53:02 BDT" duration-ms="784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyallRequiredFieldsWithoutFillingUpTheFields -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.RegistrationTestCase@2af004b]" started-at="2023-08-19T11:53:02 BDT" name="teardown" finished-at="2023-08-19T11:53:06 BDT" duration-ms="3382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.e_commerce.testcases.RegistrationTestCase@2af004b]" started-at="2023-08-19T11:53:06 BDT" name="setup" finished-at="2023-08-19T11:53:12 BDT" duration-ms="5925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyConfirmPasswordByFillingAllFieldsWithoutThisfield()[pri:5, instance:com.e_commerce.testcases.RegistrationTestCase@2af004b]" started-at="2023-08-19T11:53:12 BDT" name="VerifyConfirmPasswordByFillingAllFieldsWithoutThisfield" finished-at="2023-08-19T11:53:14 BDT" duration-ms="2217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyConfirmPasswordByFillingAllFieldsWithoutThisfield -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.e_commerce.testcases.RegistrationTestCase@2af004b]" started-at="2023-08-19T11:53:14 BDT" name="teardown" finished-at="2023-08-19T11:53:17 BDT" duration-ms="3337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.e_commerce.testcases.RegistrationTestCase -->
+    </test> <!-- MainTestNGFile -->
+  </suite> <!-- Suite -->
 </testng-results>
